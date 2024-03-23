@@ -5,9 +5,7 @@ using namespace std;
 int s;
 bool intern_exp;
 
-int main () {
-    cin >> s >> intern_exp;
-
+void calculate(int s, bool intern_exp) {
     int finalSalary;
 
     if (s < 0 || s > 100) {
@@ -18,15 +16,21 @@ int main () {
         cout << "Duoi muc luong co ban" << endl;
     }
     else {
+        cout << "So lieu hop le" << endl;
         if (intern_exp == true) {
-            cout << "So lieu hop le" << endl;
             finalSalary = s + 20;
         }
         else {
-            cout << "So lieu hop le" << endl;
             finalSalary = s;
         }
-        cout << << finalSalary << "$" << endl;
+        cout << finalSalary << "$" << endl;
     }
+}
+
+int main () {
+    cin >> s >> intern_exp;
+
+    calculate(s, intern_exp);
+        
     return 0;
 }
