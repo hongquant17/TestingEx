@@ -6,7 +6,7 @@ int s;
 bool intern_exp;
 
 void calculate(int s, bool intern_exp) {
-    int finalSalary;
+    int final_salary;
 
     if (s < 0 || s > 100) {
         cout << "So lieu khong hop le" << endl;
@@ -20,12 +20,12 @@ void calculate(int s, bool intern_exp) {
     else {
         cout << "So lieu hop le" << endl;
         if (intern_exp == true) {
-            finalSalary = s + 20;
+            final_salary = s + 20;
         }
         else {
-            finalSalary = s;
+            final_salary = s;
         }
-        cout << finalSalary << "$" << endl;
+        cout << final_salary << "$" << endl;
         return ;
     }
 }
