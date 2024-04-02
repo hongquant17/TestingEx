@@ -17,7 +17,7 @@ void calculate(int s, bool intern_exp) {
         else {
             final_salary = s;
             if (intern_exp == true) {
-                final_salary = s + 20;
+                final_salary += 20;
             }
             cout << final_salary << "$" << endl;
         }
