@@ -3,7 +3,7 @@
 using namespace std;
 
 void calculate(int s, bool intern_exp) {
-    int final_salary;
+    int final_salary = 0;
 
     if (s < 0 || s > 100) {
         cout << "So lieu khong hop le" << endl;
